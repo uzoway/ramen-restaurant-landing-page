@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 2rem 6rem;
+    overflow-x: hidden;
+}
+
+section header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+section header ul{
+    display: flex;
+    align-items: center;
+}
+
+section header ul li{
+    display: inline-block;
+    margin: 0 .8rem;
+}
+
+section header ul li a{
+    text-decoration: none;
+    color: #504969;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .5s;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+section header ul li a:hover{
+    color: #f4AE1A;
+}
+
+section header .btn{
+    text-decoration: none;
+    padding: 0.6rem 2.5rem;
+    border: none;
+    background: #f4AE1A;
+    color: #ffffff;
+    font-size: 11px;
+    transition: .5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+section header .btn:hover{
+    background: #0c0135;
+}
+
+section header #mobiletoggle{
+    display: none;
+}
+
+section .mobilenav{
+    display: none;
+}
+
+section .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin: 5rem 0 3rem;
+}
+
+section .content .leftcolumn{
+    flex-basis: 45%;
+}
+
+section .content .leftcolumn h1{
+    font-size: 4.5rem;
+    font-weight: 600;
+    line-height: 5.2rem;
+    color: #0c0135;
+    letter-spacing: -5px;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    word-spacing: .5rem;
+}
+
+section .content .leftcolumn p{
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #868686;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section .content .leftcolumn a{
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    background: #ed461d;
+    font-size: 11px;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    width: 10.875rem;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'Roboto', sans-serif;
+}
+
+section .content .leftcolumn a:hover{
+    background: #0c0135;
+}
+
+section .content .rightcolumn{
+    flex-basis: 55%;
+}
+
+section .content .rightcolumn img{
+    width: 100%;
+}
+
+section .menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .menu .menu-list{
+    flex-basis: 32%;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .menu .menu-list .menu-list-details{
+    margin-left: 1rem;
+}
+
+section .menu .menu-list .menu-list-details h6{
+    font-size: 1.25rem;
+    color: #0c0135;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+section .menu .menu-list .menu-list-details p{
+    font-size: 0.875rem;
+    color: #868686;
+    line-height: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/** Responsive design starts here **/
+
+@media (max-width: 991px){
+    section{
+        padding: 1.5rem;
+        overflow-x: hidden;
+    }
+
+    section header{
+        z-index: 1000;
+    }
+
+    section header ul{
+        display: none;
+    }
+
+    section header .btn{
+        display: none;
+    }
+
+    section header #mobiletoggle{
+        display: block;
+        filter: invert(1);
+        width: 2rem;
+    }
+
+    section .mobilenav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        background: #504969;
+        position: absolute;
+        left: -30rem;
+        top: 6.5rem;
+        z-index: 1;
+        transition: .5s;
+    }
+
+    section .mobilenav ul li{
+        display: block;
+        margin: 1rem 0;
+    }
+
+    section .mobilenav ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .5s;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    section .mobilenav ul li a:hover{
+        color: #f4AE1A;
+    }
+
+    section .mobilenav ul li:nth-child(6) a{
+        background: #f4AE1A;
+        padding: .5rem 2rem;
+        text-transform: uppercase;
+    }
+
+    section .mobilenav ul li:nth-child(6) a:hover{
+        color: #ffffff;
+        background: #0c0135;
+    }
+
+    section .content{
+        flex-wrap: wrap;
+    }
+
+    section .content .leftcolumn{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    section .content .leftcolumn h1{
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    section .content .leftcolumn p{
+        font-size: 1rem;
+    }
+
+    section .content .leftcolumn p br{
+        display: none;
+    }
+
+    section .content .leftcolumn a{
+        margin: 0 auto;
+    }
+
+    section .content .rightcolumn{
+        flex-basis: 100%;
+        margin-top: 3rem;
+    }
+
+    section .menu{
+        flex-wrap: wrap;
+    }
+
+    section .menu .menu-list{
+        flex-basis: 100%;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    section .menu .menu-list .menu-list-details p{
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 320px){
+    section .content .leftcolumn h1{
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    section header #mobiletoggle{
+        width: 1.8rem;
+    }
+
+    section .menu .menu-list{
+        flex-basis: 100%;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
