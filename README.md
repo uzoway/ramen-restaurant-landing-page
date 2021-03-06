@@ -10,7 +10,7 @@ Thank you for taking out time to check out this project.
 
 ## The Project
 
-This project is a landing page for Ramen- a noodie soup dish originally from China. The design was provided by [Bahd Coder](https://twitter.com/bahdcoder), I developed it making sure it looked as close to the design as possible.
+This is the second challenge put together by [Bahd Coder](https://twitter.com/bahdcoder). The project is a landing page for Ramen Restaurant. The design was provided by [Bahd Coder](https://twitter.com/bahdcoder), just like the [Product designer full portfolio landing page](https://github.com/uzoway/product-designer-landing), I developed it making sure it looked as close to the design as possible.
 
 I also ensured the users were able to:
 
@@ -21,5 +21,6 @@ During the course of completing the project, I didn't encounter much challenge a
 
 - Building a project from scratch using data and files exported from figma.
 - Improving my skills working on a real-life workflow.
+- And lastly my JavaScript skills.
 
 🚀
